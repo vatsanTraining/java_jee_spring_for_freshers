@@ -1,0 +1,62 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: srivatsan
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+           
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+ 
+  application:
+    name: driver-service  
+  config:
+    activate:
+      on-profile:
+      - "test"
+server:
+  port: 8080
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka  
+#        
+---
+        
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: srivatsan
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+           
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+ 
+  application:
+    name: driver-service  
+  config:
+    activate:
+      on-profile:
+      - "dev"
+server:
+  port: 8085
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka  
+#        
+        

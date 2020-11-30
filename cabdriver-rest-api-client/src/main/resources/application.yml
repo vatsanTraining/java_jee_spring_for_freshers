@@ -1,0 +1,9 @@
+server:
+  port: 4040
+  
+spring:
+  application:
+    name: cabdriver-client
+  
+
+  

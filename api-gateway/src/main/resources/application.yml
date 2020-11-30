@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: api-gateway  
+
+server:
+  port: 2030
+  
+Zuul:  
+  routes:
+    rest-jersy:
+       path: /rest/**
+       service-id: rest-jersy
+       url: http://localhost:5050/rest-jersy/
+       strip-prefix: false        
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
