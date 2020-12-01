@@ -6,7 +6,8 @@ public class Greeting {
 		
 		return "Welcome to Java Programming";
 	}
-	
+
+
 	public String getMessage(String name) {
 		
 		return name + " Welcome to Java Programming";
