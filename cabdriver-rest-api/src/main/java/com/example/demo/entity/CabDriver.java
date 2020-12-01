@@ -19,6 +19,7 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @FieldDefaults(level=AccessLevel.PRIVATE)
 
+
 @Table(name="taxidriver")
 @Entity
 public class CabDriver {
